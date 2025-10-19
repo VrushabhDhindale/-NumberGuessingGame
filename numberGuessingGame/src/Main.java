@@ -5,16 +5,20 @@ public class Main {
 
     public static void main(String[] args){
 
+        // importing the random and scanner
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
 
+        // varaible declaration
         int attempt = 0;
         int guess;
         int randomNumber = r.nextInt(1,11);
 
+        
         System.out.println("Number Guessing Gaming.");
         System.out.println("Guess the number between 1 to 10.");
 
+        // logic for number guessing
         do{
 
             System.out.print("Enter the number : ");
@@ -38,8 +42,10 @@ public class Main {
 
         }while(guess != randomNumber);
 
+        // closing scanner
         sc.close();
 
     }
 
 }
+
